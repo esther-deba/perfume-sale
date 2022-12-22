@@ -1,0 +1,132 @@
+body{
+    background-color: rgb(247, 232, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+.add{
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+}
+.chanel-image{
+    width: 15rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.title{
+    width: 190px;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.text{
+    width: 200px;
+    font-size: 13px;
+    color: rgb(110, 109, 109);
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+.perfum{
+    color: rgb(110, 109, 109);
+    margin-bottom: 15px;
+    font-size: 13px;
+    margin-right: 135px;
+}
+.information-add{
+   background-color: white;
+   border-top-right-radius: 15px;
+   border-bottom-right-radius: 15px;
+   width: 15rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.price{
+    display: flex;
+    justify-content: space-around;
+    width: 15em;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.sold{
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(0, 128, 77);;
+}
+.old-price{
+    font-size: 12px;
+    color: rgb(110, 109, 109);
+    text-decoration: line-through;
+}
+button{
+    padding: 8px 50px;
+    display: flex;
+    background-color: rgb(0, 128, 77);
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: opacity 0.2s;
+
+}
+button img{
+    margin-right: 10px;
+}
+button:hover{
+    background-color: rgb(0, 95, 57);
+    cursor: pointer;
+}
+button:active{
+    opacity: 0.7;
+}
+@media (min-width: 500px){
+    .chanel-image-mobile{
+        display: none;
+    }
+}
+@media (max-width:499px){
+    .chanel-image{
+        display: none;
+    }
+    .chanel-image-mobile{
+        width: 320px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .add{
+        flex-direction: column;
+    }
+    
+    .information-add{
+        width: 320px;
+        border-radius: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .title,
+    .text
+    {
+        width: 250px;
+    }
+    .price{
+        width: 350px
+    }
+    .perfum{
+        margin-right: 190px;
+    }
+    button{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
